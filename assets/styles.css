@@ -97,11 +97,15 @@ main{
 .modal.mostrar{
     display: flex;
 }
+.modal.ocutar{
+    display: none;
+}
 .modal-content{
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 30vw;
+    height: 55vh;
     margin: 15vh auto;
     padding: 10px;
     background-color: white;
