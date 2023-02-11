@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produto</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <link rel="shortcut icon" href="assets/images/icone.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <button class="bt-cadastrar"><strong>Cadastrar Produto</strong></button>
+        <input type="text" class="bt-pesquisar" placeholder="Pesquisar">
+
+        <table class="tabela">
+            <tr>
+                <th>Nome</th>
+                <th>Valor</th>
+                <th>Tipo</th>
+                <th>Descrição</th>
+                <th>Quantidade</th>
+                <th>Ação</th>
+            </tr>
+            <tr>
+                <td>Caneta</td>
+                <td>5,00</td>
+                <td>Escolar</td>
+                <td class="descricao">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, numquam? Assumenda ratione asperiores veniam!</td>
+                <td>25</td>
+                <td class="acao">
+                    <button class="bt-editar">Editar</button>
+                    <button class="bt-excluir">Excluir</button>
+                </td>
+            </tr>
+        </table>
+
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <div class="cabecalho">
+                    <h2>Novo Produto</h2>
+                    <button class="bt-fechar">X</button>
+                </div>
+                <form class="modal-form">
+                    <input type="text" class="modal-input" placeholder="Nome">
+                    <input type="text" class="modal-input" placeholder="Valor">
+                    <input type="text" class="modal-input" placeholder="Tipo">
+                    <input type="text" class="modal-input" placeholder="Descrição">
+                    <input type="text" class="modal-input" placeholder="Quantidade">
+                </form>
+                <div class="modal-inferior">
+                    <button class="bt-editar">Salvar</button>
+                    <button class="bt-excluir">Cancelar</button>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="assets/script.js"></script>
+</body>
+</html>
