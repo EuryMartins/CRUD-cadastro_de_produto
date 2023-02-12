@@ -1,21 +1,12 @@
-function iniciaModal(modalST) {
-    const modalStart = document.getElementById(modalST);
+function iniciaModal() {
+    const modalStart = document.getElementById('modal');
     modalStart.classList.add('mostrar')
+
+    modalStart.addEventListener('click', function(e){
+        if(e.target.id == 'fechar'){
+            modalStart.classList.remove('mostrar')
+        }
+
+    })
 }
-
-const cadastrar = document.querySelector('.bt-cadastrar')
-cadastrar.addEventListener('click', function(){
-    iniciaModal('modal');
-})
-
-
-function fechaModal(modalCL) {
-    const modalStart = document.getElementById(modalCL);
-    modalStart.classList.add('ocutar')
-}
-
-const fechar = document.querySelector('.bt-fechar')
-fechar.addEventListener('click', function(){
-    fechaModal('modal');
-})
 

@@ -10,7 +10,7 @@
 </head>
 <body>
     <main>
-        <button class="bt-cadastrar"><strong>Cadastrar Produto</strong></button>
+        <button onclick="iniciaModal()" class="bt-cadastrar"><strong>Cadastrar Produto</strong></button>
         <input type="text" class="bt-pesquisar" placeholder="Pesquisar">
 
         <table class="tabela">
@@ -39,7 +39,7 @@
             <div class="modal-content">
                 <div class="cabecalho">
                     <h2>Novo Produto</h2>
-                    <button class="bt-fechar">X</button>
+                    <button id="fechar" class="bt-fechar">X</button>
                 </div>
                 <form class="modal-form">
                     <input type="text" class="modal-input" placeholder="Nome">

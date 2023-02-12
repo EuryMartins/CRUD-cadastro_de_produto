@@ -97,9 +97,7 @@ main{
 .modal.mostrar{
     display: flex;
 }
-.modal.ocutar{
-    display: none;
-}
+
 .modal-content{
     display: flex;
     flex-direction: column;
