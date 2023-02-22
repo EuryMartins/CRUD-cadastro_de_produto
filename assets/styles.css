@@ -101,7 +101,7 @@ main{
 .modal-content{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 25px;
     width: 30vw;
     height: 55vh;
     margin: 15vh auto;
@@ -139,7 +139,7 @@ main{
 }
 .modal-form{
     display: flex;
-    gap: 20px;
+    gap: 25px;
     padding: 0 10px;
     flex-direction: column;
 }
