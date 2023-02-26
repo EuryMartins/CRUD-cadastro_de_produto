@@ -10,3 +10,20 @@ function iniciaModal() {
     })
 }
 
+const validarCampos = function(){
+    return document.getElementById('form').reportValidity()
+}
+
+const salvarProduto = function(){
+    if (validarCampos()){
+        const produto = {
+            nome: document.getElementById('nome').value,
+            valor: document.getElementById('valor').value,
+            tipo: document.getElementById('tipo').value,
+            quantidade: document.getElementById('quantidade').value
+        }
+    }
+}
+
+document.getElementById('save')
+    .addEventListener('click', salvarProduto)

@@ -39,14 +39,14 @@
                     <h2>Novo Produto</h2>
                     <button id="fechar" class="bt-fechar">X</button>
                 </div>
-                <form class="modal-form">
-                    <input type="text" class="modal-input" placeholder="Nome">
-                    <input type="text" class="modal-input" placeholder="Valor">
-                    <input type="text" class="modal-input" placeholder="Tipo">
-                    <input type="text" class="modal-input" placeholder="Quantidade">
+                <form id="form" class="modal-form">
+                    <input id="nome" type="text" class="modal-input" placeholder="Nome" required>
+                    <input id="valor" type="text" class="modal-input" placeholder="Valor" required>
+                    <input id="tipo" type="text" class="modal-input" placeholder="Tipo" required>
+                    <input id="quantidade" type="text" class="modal-input" placeholder="Quantidade" required>
                 </form>
                 <div class="modal-inferior">
-                    <button class="bt-editar">Salvar</button>
+                    <button id="save" class="bt-editar">Salvar</button>
                     <button class="bt-excluir">Cancelar</button>
                 </div>
             </div>
