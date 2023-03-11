@@ -9,11 +9,16 @@ function iniciaModal() {
 
     })
 }
-
+//função para verificar se todos os campos foram preenchidos.
 const validarCampos = function(){
     return document.getElementById('form').reportValidity()
 }
 
+//array para salvar os produtos cadastrados.
+const produtoCadastrado = []
+
+//CREAT - CRIAR
+//função que vai pegar os dados digitados e adicionar no array.
 const salvarProduto = function(){
     if (validarCampos()){
         const produto = {
@@ -22,8 +27,24 @@ const salvarProduto = function(){
             tipo: document.getElementById('tipo').value,
             quantidade: document.getElementById('quantidade').value
         }
-    }
-}
 
+        produtoCadastrado.push(produto)
+    }
+} 
+
+//ação no botão salvar
 document.getElementById('save')
     .addEventListener('click', salvarProduto)
+
+//READ - LER
+const exibir = function(){
+    console.log(produtoCadastrado)
+}
+
+//UPDATE - ATUALIZAR
+
+
+//DELET - EXCLUIR
+const excluir = function(e){
+    produtoCadastrado.remove(e)
+}
